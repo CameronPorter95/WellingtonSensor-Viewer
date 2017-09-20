@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Wellington Sensors</title>
+    <link rel='stylesheet' href='/css/wellington_sensor_app_style.css' type='text/css' ></link>
+  </head>
+  <body>
+    <h1>Wellington Sensors</h1>
+    <h1>More Than You Want To Know About Wellington!</h1>
+    <h3>look at these sensors</h3>
+
+    <%# for all sensors%>
+    <% sensors.each do |sensor| %>
+      <div class='sensor-display-tile'>
+        <p> Sensor id: <%= sensor.id %> '<%= sensor.name %>' </p>
+        <p>reads <%= sensor %> </p> <%# TODO implement sensor reading%>
+      </div>
+    <% end %>
+  </body>
+</html>
